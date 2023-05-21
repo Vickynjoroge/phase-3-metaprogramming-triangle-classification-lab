@@ -17,14 +17,14 @@ class Triangle
       :equilateral
     elsif @x == @y || @y == @z || @x == @z
       :isosceles
-      elsif @x != @y && @y != @z
+    elsif @x != @y && @y != @z
         :scalene
       end
   end
 
   class TriangleError < StandardError
     def message
-      "Invalid Triangle"
+      "Not a Type of Triangle "
     end
   end
 end
